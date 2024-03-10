@@ -1,4 +1,5 @@
 import 'package:azkar/features/home/data/controller/location_cubit/location_cubit.dart';
+import 'package:azkar/features/home/data/controller/saluh_cubit/saluh_cubit.dart';
 import 'package:azkar/features/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,6 +22,11 @@ class MyApp extends StatelessWidget {
           create: (context) => LocationCubit(
             
           )..getCuruntLocation(),
+        ),
+        BlocProvider(
+          create: (context) => SaluhCubit(
+            
+          )..getSaluhTime(),
         ),
       ],
       child: MaterialApp(

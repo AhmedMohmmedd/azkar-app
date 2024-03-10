@@ -1,6 +1,4 @@
-import 'package:azkar/utils/app_style.dart';
 import 'package:azkar/utils/constantis.dart';
-import 'package:azkar/features/home/widgets/category_container.dart';
 import 'package:azkar/features/home/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
