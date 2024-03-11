@@ -1,5 +1,6 @@
 import 'package:azkar/utils/constantis.dart';
 import 'package:azkar/features/home/widgets/home_view_body.dart';
+import 'package:azkar/utils/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -16,9 +17,10 @@ class HomeView extends StatelessWidget {
           Icons.reorder,
           color: Colors.white,
         ),
+        title: Image.asset(CustomImages.saluh),
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(
+      body: const Padding(
+        padding:  EdgeInsets.only(
           top: 20,
           left: 20,
           right: 20,

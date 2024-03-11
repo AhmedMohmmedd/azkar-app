@@ -1,3 +1,4 @@
+import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {
@@ -29,6 +30,27 @@ abstract class AppStyles {
         fontWeight: FontWeight.bold,
         fontSize: getResponsiveFontSize(context, fontSize: 30),
         fontFamily: 'shekari');
+  }
+  static TextStyle styleReguler20(context) {
+    return TextStyle(
+        color: Colors.black,
+        fontWeight: FontWeight.w600,
+        fontSize: getResponsiveFontSize(context, fontSize: 20),
+        fontFamily: 'NotoNastaliqUrdu');
+  }
+  static TextStyle styleReguler16(context) {
+    return TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.w600,
+        fontSize: getResponsiveFontSize(context, fontSize: 16),
+        fontFamily: 'NotoNastaliqUrdu');
+  }
+  static TextStyle styleReguler30(context) {
+    return TextStyle(
+        color: kPrimaryColor,
+        fontWeight: FontWeight.w600,
+        fontSize: getResponsiveFontSize(context, fontSize: 30),
+        fontFamily: 'NotoNastaliqUrdu');
   }
 }
 

@@ -1,3 +1,4 @@
+import 'package:azkar/features/home/data/controller/date_cubit/date_cubit.dart';
 import 'package:azkar/features/home/data/controller/location_cubit/location_cubit.dart';
 import 'package:azkar/features/home/data/controller/saluh_cubit/saluh_cubit.dart';
 import 'package:azkar/features/home/views/home_view.dart';
@@ -27,6 +28,11 @@ class MyApp extends StatelessWidget {
           create: (context) => SaluhCubit(
             
           )..getSaluhTime(),
+        ),
+        BlocProvider(
+          create: (context) => DateCubit(
+            
+          )..getHijiryDate(),
         ),
       ],
       child: MaterialApp(
