@@ -1,4 +1,5 @@
-import 'package:azkar/ahadeth/views/ahadeth_view.dart';
+import 'package:azkar/features/ahadeth/views/ahadeth_view.dart';
+import 'package:azkar/features/ayat/views/ayat_view.dart';
 import 'package:azkar/features/doa/views/doa_view.dart';
 import 'package:azkar/features/home/widgets/category_item.dart';
 import 'package:azkar/utils/image_strings.dart';
@@ -35,7 +36,7 @@ class CategorysSection extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 20,),
+      const  SizedBox(height: 20,),
          Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -44,13 +45,18 @@ class CategorysSection extends StatelessWidget {
               text: 'أحاديث  ',
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return AhadethView();
+                  return const AhadethView();
                 }));
               },
             ),
             CategoryItem(
               image: CustomImages.ayat,
               text: 'آيات ',
+               onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return const AyatView();
+                }));
+              },
             ),
             CategoryItem(
               image: CustomImages.sebha,
