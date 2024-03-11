@@ -1,3 +1,5 @@
+import 'package:azkar/ahadeth/views/ahadeth_view.dart';
+import 'package:azkar/features/doa/views/doa_view.dart';
 import 'package:azkar/features/home/widgets/category_item.dart';
 import 'package:azkar/utils/image_strings.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +11,7 @@ class CategorysSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       children: [
          Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -25,6 +27,11 @@ class CategorysSection extends StatelessWidget {
             CategoryItem(
               image: CustomImages.doaa,
               text: 'دعاء ',
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return DoaView();
+                }));
+              },
             ),
           ],
         ),
@@ -35,6 +42,11 @@ class CategorysSection extends StatelessWidget {
             CategoryItem(
               image: CustomImages.hadeth,
               text: 'أحاديث  ',
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return AhadethView();
+                }));
+              },
             ),
             CategoryItem(
               image: CustomImages.ayat,

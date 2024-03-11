@@ -101,6 +101,10 @@ flutter:
      - family: NotoNastaliqUrdu
        fonts:
          - asset: assets/fonts/NotoNastaliqUrdu-SemiBold.ttf
+
+     - family: ArefRuqaa
+       fonts:
+         - asset: assets/fonts/ArefRuqaa-Bold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

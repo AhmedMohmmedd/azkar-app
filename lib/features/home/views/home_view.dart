@@ -18,6 +18,7 @@ class HomeView extends StatelessWidget {
           color: Colors.white,
         ),
         title: Image.asset(CustomImages.saluh),
+        centerTitle: true,
       ),
       body: const Padding(
         padding:  EdgeInsets.only(

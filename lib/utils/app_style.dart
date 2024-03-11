@@ -31,6 +31,13 @@ abstract class AppStyles {
         fontSize: getResponsiveFontSize(context, fontSize: 30),
         fontFamily: 'shekari');
   }
+  static TextStyle styleArefRuqaaBold30(context) {
+    return TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontSize: getResponsiveFontSize(context, fontSize: 30),
+        fontFamily: 'ArefRuqaa');
+  }
   static TextStyle styleReguler20(context) {
     return TextStyle(
         color: Colors.black,

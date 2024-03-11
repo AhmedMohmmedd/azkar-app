@@ -11,6 +11,7 @@ final String title ;
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: 0,
       backgroundColor:  kPrimaryColor,
       title: Text(title, style: AppStyles.styleBold30(context),),
       centerTitle: true,
@@ -18,7 +19,7 @@ final String title ;
         onTap: () {
           Navigator.pop(context);
         },
-        child: const Icon(Icons.keyboard_return_outlined ,color: Colors.white,)),
+        child: const Icon(Icons.arrow_back_sharp ,color: Colors.white,)),
     );
   }
   

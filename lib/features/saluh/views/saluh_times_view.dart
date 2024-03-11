@@ -1,4 +1,4 @@
-import 'package:azkar/features/home/data/controller/saluh_cubit/saluh_cubit.dart';
+import 'package:azkar/features/saluh/data/controller/saluh_cubit/saluh_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
