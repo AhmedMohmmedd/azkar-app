@@ -1,3 +1,5 @@
+import 'package:azkar/common/custom_rouned_container.dart';
+import 'package:azkar/common/custom_share_icon.dart';
 import 'package:azkar/utils/app_style.dart';
 import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';
@@ -48,27 +50,22 @@ class _CustomContainerState extends State<CustomContainer> {
                 const SizedBox(
                   height: 20,
                 ),
+                CustomRoundedContainer(
+                  child: Center(
+                      child: widget.countNum == 0
+                          ? Icon(
+                              Icons.done,
+                              color: kPrimaryColor,
+                            )
+                          : Text(
+                              '${widget.countNum}',
+                              style: AppStyles.styleBold15(context)
+                                  .copyWith(color: kPrimaryColor),
+                            )),
+                ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: kPrimaryColor,
-                      ),
-                      child: Center(
-                          child: widget.countNum == 0
-                              ? const Icon(
-                                  Icons.done,
-                                  color: Colors.white,
-                                )
-                              : Text(
-                                  '${widget.countNum}',
-                                  style: AppStyles.styleBold15(context),
-                                )),
-                    ),
+                    CustomShareIcon(text: widget.text,),
                   ],
                 ),
               ],
