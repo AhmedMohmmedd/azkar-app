@@ -12,7 +12,6 @@ class HadethItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.sizeOf(context).height * .3,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: kContainerColor,

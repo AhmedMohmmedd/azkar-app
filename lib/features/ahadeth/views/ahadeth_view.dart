@@ -55,8 +55,11 @@ class _AhadethViewState extends State<AhadethView> {
                   const SizedBox(
                     height: 20,
                   ),
-                  HadethItem(
-                    text: ahadeth[index.toInt()],
+                  SizedBox(
+                    height: MediaQuery.sizeOf(context).height * .3,
+                    child: HadethItem(
+                      text: ahadeth[index.toInt()],
+                    ),
                   ),
                   const SizedBox(
                     height: 40,
