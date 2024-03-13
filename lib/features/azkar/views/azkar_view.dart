@@ -25,7 +25,14 @@ class _AzkarViewState extends State<AzkarView> {
         key: scaffoldkey,
         backgroundColor: kbackgroundColor,
         appBar: AppBar(
-          leading: const Icon(Icons.arrow_back_sharp , color: Colors.white,),
+          leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back_sharp,
+            color: Colors.white,
+          )),
           title: Text('ألا بذكر اللَّه تطمئِن القلوب' , style: AppStyles.styleReguler18(context),),
          centerTitle: true,
           backgroundColor: kPrimaryColor,

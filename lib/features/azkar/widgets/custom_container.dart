@@ -32,7 +32,7 @@ class _CustomContainerState extends State<CustomContainer> {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            color: const Color(0xfff4f4fe),
+            color:kContainerColor,
             border: Border.all(
               color: const Color(0xffc4c6f3),
               width: 1,

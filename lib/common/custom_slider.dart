@@ -18,7 +18,9 @@ class CustomSlider extends StatelessWidget {
       activeColor: kPrimaryColor,
       min: 0,
       max: max,
+      divisions: max.toInt(),
       value: sliderValue,
+      label: '${sliderValue.round()}',
       onChanged: (val) {},
     );
   }

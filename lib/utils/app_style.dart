@@ -66,6 +66,20 @@ abstract class AppStyles {
         fontSize: getResponsiveFontSize(context, fontSize: 18),
         fontFamily: 'NotoNastaliqUrdu');
   }
+  static TextStyle styleRegulerBlac34(context) {
+    return TextStyle(
+        color: Colors.black,
+        fontWeight: FontWeight.w600,
+        fontSize: getResponsiveFontSize(context, fontSize: 34),
+        fontFamily: 'NotoNastaliqUrdu');
+  }
+  static TextStyle styleReguler100(context) {
+    return TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.w600,
+        fontSize: getResponsiveFontSize(context, fontSize: 100),
+        fontFamily: 'NotoNastaliqUrdu');
+  }
 }
 
 // sacleFactor

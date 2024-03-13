@@ -3,6 +3,7 @@ import 'package:azkar/features/ayat/views/ayat_view.dart';
 import 'package:azkar/features/azkar/views/azkar_view.dart';
 import 'package:azkar/features/doa/views/doa_view.dart';
 import 'package:azkar/features/home/widgets/category_item.dart';
+import 'package:azkar/features/sepha/views/sepha_view.dart';
 import 'package:azkar/utils/image_strings.dart';
 import 'package:flutter/material.dart';
 
@@ -67,6 +68,11 @@ class CategorysSection extends StatelessWidget {
             CategoryItem(
               image: CustomImages.sebha,
               text: 'السبحه  ',
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return const SephaView();
+                }));
+              },
             ),
           ],
         ),
