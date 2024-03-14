@@ -1,5 +1,5 @@
 import 'package:azkar/utils/constantis.dart';
-import 'package:azkar/features/home/widgets/home_view_body.dart';
+import 'package:azkar/features/home/views/widgets/home_view_body.dart';
 import 'package:azkar/utils/image_strings.dart';
 import 'package:flutter/material.dart';
 

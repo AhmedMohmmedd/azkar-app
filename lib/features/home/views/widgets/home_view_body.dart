@@ -1,6 +1,6 @@
-import 'package:azkar/features/home/widgets/calinder_container.dart';
-import 'package:azkar/features/home/widgets/categorys_section.dart';
-import 'package:azkar/features/home/widgets/salah_time_container.dart';
+import 'package:azkar/features/home/views/widgets/calinder_container.dart';
+import 'package:azkar/features/home/views/widgets/categorys_section.dart';
+import 'package:azkar/features/home/views/widgets/salah_time_container.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {

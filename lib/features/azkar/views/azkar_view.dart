@@ -1,10 +1,10 @@
 import 'package:azkar/common/custom_app_bar.dart';
-import 'package:azkar/features/azkar/widgets/akar_spah.dart';
-import 'package:azkar/features/azkar/widgets/azkar_msa2.dart';
-import 'package:azkar/features/azkar/widgets/azkar_nom.dart';
+import 'package:azkar/features/azkar/views/widgets/akar_spah.dart';
+import 'package:azkar/features/azkar/views/widgets/azkar_msa2.dart';
+import 'package:azkar/features/azkar/views/widgets/azkar_nom.dart';
 import 'package:azkar/utils/app_style.dart';
 import 'package:azkar/utils/constantis.dart';
-import 'package:azkar/features/azkar/widgets/custom_container.dart';
+import 'package:azkar/features/azkar/views/widgets/custom_container.dart';
 import 'package:flutter/material.dart';
 
 class AzkarView extends StatefulWidget {

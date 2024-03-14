@@ -1,4 +1,4 @@
-import 'package:azkar/features/azkar/widgets/custom_container.dart';
+import 'package:azkar/features/azkar/views/widgets/custom_container.dart';
 import 'package:flutter/material.dart';
 
 class AzkarMsa2List extends StatelessWidget {

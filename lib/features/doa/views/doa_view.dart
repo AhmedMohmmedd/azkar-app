@@ -1,6 +1,6 @@
 import 'package:azkar/common/custom_app_bar.dart';
-import 'package:azkar/features/doa/widgets/custom_titel_container.dart';
-import 'package:azkar/features/doa/widgets/doa_body.dart';
+import 'package:azkar/features/doa/views/widgets/custom_titel_container.dart';
+import 'package:azkar/features/doa/views/widgets/doa_body.dart';
 import 'package:azkar/utils/app_style.dart';
 import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';

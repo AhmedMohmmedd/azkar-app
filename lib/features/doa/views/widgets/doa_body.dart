@@ -1,7 +1,7 @@
 import 'package:azkar/common/custom_app_bar.dart';
 import 'package:azkar/common/custom_share_icon.dart';
-import 'package:azkar/features/ahadeth/widgets/hadeth_item.dart';
-import 'package:azkar/features/azkar/widgets/custom_container.dart';
+import 'package:azkar/features/ahadeth/views/widgets/hadeth_item.dart';
+import 'package:azkar/features/azkar/views/widgets/custom_container.dart';
 import 'package:azkar/utils/app_style.dart';
 import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';

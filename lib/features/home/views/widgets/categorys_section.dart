@@ -2,7 +2,7 @@ import 'package:azkar/features/ahadeth/views/ahadeth_view.dart';
 import 'package:azkar/features/ayat/views/ayat_view.dart';
 import 'package:azkar/features/azkar/views/azkar_view.dart';
 import 'package:azkar/features/doa/views/doa_view.dart';
-import 'package:azkar/features/home/widgets/category_item.dart';
+import 'package:azkar/features/home/views/widgets/category_item.dart';
 import 'package:azkar/features/saluh/views/saluh_times_view.dart';
 import 'package:azkar/features/sepha/views/sepha_view.dart';
 import 'package:azkar/utils/image_strings.dart';

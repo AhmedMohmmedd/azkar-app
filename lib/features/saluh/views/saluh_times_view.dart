@@ -1,7 +1,7 @@
 import 'package:azkar/common/custom_app_bar.dart';
 import 'package:azkar/common/custom_rouned_container.dart';
 import 'package:azkar/features/saluh/data/controller/saluh_cubit/saluh_cubit.dart';
-import 'package:azkar/features/saluh/widgets/custom_saluh_container.dart';
+import 'package:azkar/features/saluh/views/widgets/custom_saluh_container.dart';
 import 'package:azkar/utils/app_style.dart';
 import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';

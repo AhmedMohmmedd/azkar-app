@@ -1,5 +1,5 @@
 import 'package:azkar/utils/app_style.dart';
-import 'package:azkar/features/azkar/widgets/custom_container.dart';
+import 'package:azkar/features/azkar/views/widgets/custom_container.dart';
 import 'package:flutter/material.dart';
 
 class AzkarNomList extends StatelessWidget {

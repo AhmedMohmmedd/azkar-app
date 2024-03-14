@@ -1,4 +1,4 @@
-import 'package:azkar/features/ahadeth/widgets/hadeth_item.dart';
+import 'package:azkar/features/ahadeth/views/widgets/hadeth_item.dart';
 import 'package:azkar/common/custom_app_bar.dart';
 import 'package:azkar/common/custom_rounded_button.dart';
 import 'package:azkar/common/custom_slider.dart';
