@@ -19,7 +19,7 @@ class LocationCubit extends Cubit<LocationState> {
     LocationPermission permission;
     serviceEnabled = await Geolocator.isLocationServiceEnabled();
     permission = await Geolocator.checkPermission();
-    if (sharedPreferences.getDouble('longitude') != null) {
+    if (sharedPreferences.getDouble('longitude') != null)  {
       return;
     }
     if (permission == LocationPermission.denied) {
@@ -29,14 +29,14 @@ class LocationCubit extends Cubit<LocationState> {
       }
     }
     if (permission == LocationPermission.whileInUse) {
-      print('whileInUse');
+      // print('whileInUse');
       position = await Geolocator.getCurrentPosition();
-     double altitude = position.altitude;
+     double latitude = position.latitude;
      double longitude = position.longitude;
-      sharedPreferences.setDouble('altitude' , altitude);
+      sharedPreferences.setDouble('altitude' , latitude);
       sharedPreferences.setDouble('longitude' , longitude);
-      print(altitude);
-      print(longitude);
+      // print(latitude);
+      // print(longitude);
     }
   }
 }

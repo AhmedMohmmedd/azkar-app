@@ -20,14 +20,7 @@ class HomeView extends StatelessWidget {
         title: Image.asset(CustomImages.saluh),
         centerTitle: true,
       ),
-      body: const Padding(
-        padding:  EdgeInsets.only(
-          top: 20,
-          left: 20,
-          right: 20,
-        ),
-        child: HomeViewBody(),
-      ),
+      body: HomeViewBody(),
     );
   }
 }

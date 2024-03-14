@@ -24,83 +24,80 @@ class ClenderContainer extends StatelessWidget {
           final String month = state.month;
           final String year = state.year;
 
-          return Padding(
-            padding: const EdgeInsets.all(5),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(
-                  color: kDividerColor,
-                  width: .5,
+          return Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                color: kDividerColor,
+                width: .5,
+              ),
+               image: const DecorationImage(
+              image: AssetImage('assets/images/clinder_backround.jpg'),
+              fit: BoxFit.fill,
+            ),
+            ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  child: Text(
+                    dayName,
+                    style: AppStyles.styleReguler30(context),
+                  ),
                 ),
-                 image: const DecorationImage(
-                image: AssetImage('assets/images/clinder_backround.jpg'),
-                fit: BoxFit.fill,
-              ),
-              ),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 20),
-                    child: Text(
-                      dayName,
-                      style: AppStyles.styleReguler30(context),
-                    ),
-                  ),
-                  Divider(
-                    color: kDividerColor,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text('$dayOfMonth',
-                              style: AppStyles.styleReguler20(context)),
-                          SizedBox(
-                            width: MediaQuery.sizeOf(context).width * .3,
-                            child: Divider(
-                              color: kDividerColor,
-                            ),
+                Divider(
+                  color: kDividerColor,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('$dayOfMonth',
+                            style: AppStyles.styleReguler20(context)),
+                        SizedBox(
+                          width: MediaQuery.sizeOf(context).width * .3,
+                          child: Divider(
+                            color: kDividerColor,
                           ),
-                          Text(monthName,
-                              style: AppStyles.styleReguler20(context)),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 100,
-                        child: VerticalDivider(
-                          thickness: 1,
-                          color: kDividerColor,
                         ),
+                        Text(monthName,
+                            style: AppStyles.styleReguler20(context)),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 100,
+                      child: VerticalDivider(
+                        thickness: 1,
+                        color: kDividerColor,
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            day,
-                            style: AppStyles.styleReguler20(context),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          day,
+                          style: AppStyles.styleReguler20(context),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.sizeOf(context).width * .3,
+                          child: Divider(
+                            color: kDividerColor,
                           ),
-                          SizedBox(
-                            width: MediaQuery.sizeOf(context).width * .3,
-                            child: Divider(
-                              color: kDividerColor,
-                            ),
-                          ),
-                          Text(
-                            month,
-                            style: AppStyles.styleReguler20(context),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                 
-                ],
-              ),
+                        ),
+                        Text(
+                          month,
+                          style: AppStyles.styleReguler20(context),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+               
+              ],
             ),
           );
         } else {

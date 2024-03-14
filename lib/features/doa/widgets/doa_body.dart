@@ -1,5 +1,8 @@
+import 'package:azkar/common/custom_app_bar.dart';
+import 'package:azkar/common/custom_share_icon.dart';
 import 'package:azkar/features/ahadeth/widgets/hadeth_item.dart';
 import 'package:azkar/features/azkar/widgets/custom_container.dart';
+import 'package:azkar/utils/app_style.dart';
 import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';
 
@@ -16,17 +19,49 @@ class DoaBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: kContainerColor,
-      ),
-      backgroundColor: kContainerColor,
+      appBar: const CustomAppBar(title: ''),
+      backgroundColor: kbackgroundColor,
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
-            child: HadethItem(
-              text: doaa[index!],
+            child:Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        color: kbackgroundColor,
+        border: Border.all(
+          color: kPrimaryColor,
+          width: 1,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  doaa[index!],
+                  style: AppStyles.styleArefRuqaaBold30(context)
+                      .copyWith(color: Colors.black),
+                  textAlign: TextAlign.right,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    CustomShareIcon(text: doaa[index!]),
+                  ],
+                )
+              ],
             ),
+          ),
+        ),
+      ),
+    ),
           ),
         ),
       ),

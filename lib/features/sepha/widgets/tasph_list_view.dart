@@ -1,4 +1,3 @@
-
 import 'package:azkar/features/sepha/widgets/tasph_list_view_item.dart';
 import 'package:flutter/material.dart';
 
@@ -31,9 +30,6 @@ class TasphListView extends StatelessWidget {
             ),
             TasphListViewItem(
               text: ' أستغفر الله',
-            ),
-            TasphListViewItem(
-              text: 'سبحان الله وبحمده سبحان الله العظيم',
             ),
           ],
         ),

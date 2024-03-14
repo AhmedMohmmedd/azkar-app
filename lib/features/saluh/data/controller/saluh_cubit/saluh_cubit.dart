@@ -8,17 +8,19 @@ part 'saluh_state.dart';
 class SaluhCubit extends Cubit<SaluhState> {
   SaluhCubit() : super(SaluhInitial());
 
-   getSaluhTime() async {
+  getSaluhTime() async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-    double altitude = sharedPreferences.getDouble('altitude')!;
+    double latitude = sharedPreferences.getDouble('altitude')!;
     double longitude = sharedPreferences.getDouble('longitude')!;
-    final myCoordinates = Coordinates(altitude, longitude);
+    final myCoordinates = Coordinates(latitude, longitude);
     final params = CalculationMethod.karachi.getParameters();
     params.madhab = Madhab.hanafi;
     final prayerTimes = PrayerTimes.today(myCoordinates, params);
-    emit(SaluhPrayerTimes(prayerTimes));
-    print(prayerTimes.asr);
-    print('///////////////////////////////');
-    print(prayerTimes.maghrib);
+    //////
+
+    emit(SaluhPrayerTimes(prayerTimes ));
+    // print(prayerTimes.asr);
+    // print('///////////////////////////////');
+    // print(prayerTimes.maghrib);
   }
 }

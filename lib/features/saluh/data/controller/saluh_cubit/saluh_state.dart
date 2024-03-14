@@ -6,6 +6,7 @@ sealed class SaluhState {}
 final class SaluhInitial extends SaluhState {}
 class SaluhPrayerTimes extends SaluhState {
   final PrayerTimes prayerTimes;
+  
 
   SaluhPrayerTimes(this.prayerTimes);
 

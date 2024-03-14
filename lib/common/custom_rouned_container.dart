@@ -5,14 +5,16 @@ import 'package:flutter/material.dart';
 class CustomRoundedContainer extends StatelessWidget {
   const CustomRoundedContainer({
     super.key,
-    this.child,
+    this.child, this.height = 40, this.width = 40,
   });
   final Widget? child;
+  final double? height;
+  final double? width;
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: 40,
+      height: height,
+      width: width,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(
