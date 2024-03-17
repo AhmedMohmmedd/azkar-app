@@ -1,7 +1,7 @@
-
 import 'package:adhan/adhan.dart';
 import 'package:azkar/features/saluh/views/widgets/custom_saluh_container.dart';
 import 'package:azkar/utils/app_style.dart';
+import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -9,10 +9,11 @@ class SaluhTimesItems extends StatelessWidget {
   const SaluhTimesItems({
     super.key,
     required this.prayerTimes,
+    required this.next,
   });
 
   final PrayerTimes prayerTimes;
-
+  final Prayer next;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,8 +25,7 @@ class SaluhTimesItems extends StatelessWidget {
             children: [
               Text(
                 'وَأَقِمِ ٱلصَّلَوٰةَ لِذِكْرِىٓ ',
-                style: AppStyles.styleReguler30(context)
-                    .copyWith(fontSize: 32),
+                style: AppStyles.styleReguler30(context).copyWith(fontSize: 32),
               ),
               const SizedBox(
                 height: 80,
@@ -34,10 +34,7 @@ class SaluhTimesItems extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   CustomSaluhContainer(
-                    saluhName: prayerTimes
-                        .nextPrayer()
-                        .name
-                        .toUpperCase(),
+                    saluhName: prayerTimes.nextPrayer().name.toUpperCase(),
                     saluhTime: '',
                   ),
                   Column(
@@ -45,6 +42,16 @@ class SaluhTimesItems extends StatelessWidget {
                       Text(
                         ' الصلاة القادمة',
                         style: AppStyles.styleReguler30(context),
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        DateFormat.jm()
+                            .format(prayerTimes.timeForPrayer(next)!),
+                        style: AppStyles.styleBold24(context).copyWith(
+                          color: kPrimaryColor,
+                        ),
                       ),
                     ],
                   )

@@ -22,7 +22,7 @@ class SaluhCubit extends Cubit<SaluhState> {
           sharedPreferences.getDouble('altitude')!,
           sharedPreferences.getDouble('longitude')!);
       final params = CalculationMethod.karachi.getParameters();
-      params.madhab = Madhab.hanafi;
+      params.madhab = Madhab.shafi;
       final prayerTimes = PrayerTimes.today(myCoordinates, params);
       emit(SaluhPrayerTimes(prayerTimes));
       return;
@@ -45,7 +45,7 @@ class SaluhCubit extends Cubit<SaluhState> {
 
       final myCoordinates = Coordinates(latitude, longitude);
       final params = CalculationMethod.karachi.getParameters();
-      params.madhab = Madhab.hanafi;
+      params.madhab = Madhab.shafi;
       final prayerTimes = PrayerTimes.today(myCoordinates, params);
       emit(SaluhPrayerTimes(prayerTimes));
     }

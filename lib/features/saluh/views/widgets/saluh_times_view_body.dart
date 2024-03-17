@@ -1,4 +1,4 @@
-
+import 'package:adhan/adhan.dart';
 import 'package:azkar/features/saluh/data/controller/saluh_cubit/saluh_cubit.dart';
 import 'package:azkar/features/saluh/views/widgets/saluh_times_Items.dart';
 import 'package:azkar/utils/app_style.dart';
@@ -19,7 +19,12 @@ class SaluhTimesViewBody extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         } else if (state is SaluhPrayerTimes) {
           final prayerTimes = state.prayerTimes;
-          return SaluhTimesItems(prayerTimes: prayerTimes);
+          Prayer next = prayerTimes.nextPrayer();
+
+          return SaluhTimesItems(
+            prayerTimes: prayerTimes,
+            next: next,
+          );
         } else if (state is SaluhLocationDenied) {
           return Center(
             child: Text(
