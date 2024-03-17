@@ -22,19 +22,19 @@ class ClenderContainer extends StatelessWidget {
           final String day = state.day;
           final String dayName = state.dayName;
           final String month = state.month;
-          final String year = state.year;
+          // final String year = state.year;
 
           return Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              border: Border.all(
-                color: kDividerColor,
-                width: .5,
-              ),
-               image: const DecorationImage(
-              image: AssetImage('assets/images/clinder_backround.jpg'),
-              fit: BoxFit.fill,
-            ),
+              // border: Border.all(
+              //   color: kDividerColor,
+              //   width: .5,
+              // ),
+              //    image: const DecorationImage(
+              //   image: AssetImage('assets/images/clinder_backround.jpg'),
+              //   fit: BoxFit.fill,
+              // ),
             ),
             child: Column(
               children: [

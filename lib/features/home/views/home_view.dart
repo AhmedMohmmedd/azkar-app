@@ -13,10 +13,11 @@ class HomeView extends StatelessWidget {
       //#2b7870
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
-        leading: const Icon(
-          Icons.reorder,
-          color: Colors.white,
-        ),
+        leading: Text(''),
+        //  const Icon(
+        //   Icons.reorder,
+        //   color: Colors.white,
+        // ),
         title: Image.asset(CustomImages.saluh),
         centerTitle: true,
       ),

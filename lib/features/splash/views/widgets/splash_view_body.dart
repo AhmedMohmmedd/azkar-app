@@ -1,6 +1,7 @@
 import 'package:azkar/features/home/views/home_view.dart';
 import 'package:azkar/features/splash/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -48,7 +49,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
                   height: _animation.value,
                   width: _animation.value,
                   child: Image.asset(
-                    'assets/images/logo_image.jpg',
+                    'assets/images/new_logo.PNG',
                     fit: BoxFit.fill,
                   ),
                 );
@@ -69,15 +70,17 @@ class _SplashViewBodyState extends State<SplashViewBody>
         Tween<Offset>(begin: const Offset(0, 4), end: Offset.zero)
             .animate(animationController);
     _animation =
-        Tween<double>(begin: 50.0, end: 250.0).animate(animationController);
+        Tween<double>(begin: 50.0, end: 200.0).animate(animationController);
     animationController.forward();
   }
 
-  void navigatToHome() {
+  void navigatToHome()  {
+    
     Future.delayed(
-      const Duration(seconds: 3),
+       Duration( seconds: 3),
       () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) {
           return HomeView();
         }));
       },

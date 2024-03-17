@@ -23,7 +23,8 @@ class CategorysSection extends StatelessWidget {
             CategoryItem(
               image: CustomImages.saluh,
               text: 'الصلاة ',
-              onTap: () {
+              onTap: ()  {
+                //sharedPreferences.getDouble('longitude') != null
                 Navigator.push(context, MaterialPageRoute(builder: (context){
                   return const SaluhTimesView();
                 }));

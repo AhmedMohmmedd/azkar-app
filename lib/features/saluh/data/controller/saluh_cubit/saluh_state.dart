@@ -13,3 +13,5 @@ class SaluhPrayerTimes extends SaluhState {
   // @override
   // List<Object> get props => [prayerTimes];
 }
+final class SaluhLoding extends SaluhState {}
+final class SaluhLocationDenied extends SaluhState {}

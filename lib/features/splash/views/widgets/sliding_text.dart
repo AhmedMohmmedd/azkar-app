@@ -18,9 +18,7 @@ class SlidingText extends StatelessWidget {
             position: slidingAnimation,
             child: Text(
               'وَبَشِّرِ الصَّابِرِينَ',
-              style: AppStyles.styleReguler30(context).copyWith(
-                color: Color(0xff02769b),
-              ),
+              style: AppStyles.styleReguler30(context),
               textAlign: TextAlign.center,
             ),
           );

@@ -1,6 +1,6 @@
 import 'package:azkar/features/home/views/widgets/calinder_container.dart';
 import 'package:azkar/features/home/views/widgets/categorys_section.dart';
-import 'package:azkar/features/home/views/widgets/salah_time_container.dart';
+import 'package:azkar/utils/constantis.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -10,22 +10,41 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Column(
-        children: [
-          ClenderContainer(),
-          // SalahTimeContainer(),
-          SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: EdgeInsets.only(
-              left: 20,
-              right: 20,
+    return Padding(
+      padding: const EdgeInsets.only(
+        top: 20,
+        left: 20,
+        right: 20,
+        bottom: 20,
+      ),
+      child: Container(
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: kDividerColor,
+              width: .5,
             ),
-            child: CategorysSection(),
           ),
-        ],
+        child: Container(
+          margin: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: kDividerColor,
+              width: .5,
+            ),
+          ),
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ClenderContainer(),
+              SizedBox(
+                height: 40,
+              ),
+              CategorysSection(),
+            ],
+          ),
+        ),
       ),
     );
   }
