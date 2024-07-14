@@ -1,3 +1,7 @@
+# :blue_book: Overview
+- Used Flutter with BLoC pattern to build Islamic Azkar and prayer times .
+- Played with some fancy UI widgets.
+
 
 # :iphone: Screens
  ## :house: Home Screen
