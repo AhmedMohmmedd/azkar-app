@@ -1,5 +1,5 @@
 # :blue_book: Overview
-- Used Flutter with BLoC pattern to build Islamic Azkar and prayer times .
+- Used Flutter with BLoC pattern to build Islamic Azkar and prayer times App .
 - Played with some fancy UI widgets.
 
 
