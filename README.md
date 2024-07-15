@@ -10,6 +10,9 @@
 ## Open location permission
 ![WhatsApp Image 2024-07-14 at 10 00 30 PM](https://github.com/user-attachments/assets/7e73d78c-a109-4e51-8f55-c59632d2f307)
 
+## Saluh Screen
+![d5998d8f-0d67-46f2-93a6-887c7c75b732](https://github.com/user-attachments/assets/c28ab303-f2e4-4064-8023-c88f32e04508)
+
 ## Azkar Screen
 ![WhatsApp Image 2024-07-14 at 10 00 32 PM](https://github.com/user-attachments/assets/39934f61-0d86-4e7e-9e2d-29105ee50b3a)
 
